@@ -25,6 +25,7 @@ img{
 .container{
     max-width: 1158px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 h1{
@@ -56,6 +57,8 @@ h1{
     box-sizing: border-box;
     padding: 16px 32px;
     border-radius: 3px;
+    display: block;
+    margin: 0 auto;
 }
 
 .main-btn:hover, .main-btn:focus {
@@ -75,7 +78,7 @@ h1{
 .nav-item {
     font-weight: 500;
     color: var(--banner-bg);
-    padding-right: 40px;
+    padding: 24px 0;
 }
 
 .logo {
@@ -217,12 +220,12 @@ nav{
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    border-bottom: 1px solid var(--card-border);
 }
 
 .nav-list, .address-list{
     display: flex;
     justify-content: space-between;
+    gap: 40px;
     
 }
 
@@ -270,12 +273,11 @@ nav{
     align-items: center;
     box-sizing: border-box;
     height: 600px;
-    margin-bottom: 120px;
+    padding: 188px 0;
 }
 
 .main-title{
     max-width: 496px;
-    margin-top: 188px;
 }
 
 .cards-main{
@@ -296,6 +298,10 @@ nav{
     letter-spacing: 0.02em;
     color: var(--banner-bg);
     margin: 0;
+}
+
+.main-description{
+    padding: 120px 0;
 }
 
 .card-main-description{
@@ -331,4 +337,8 @@ nav{
 
 .person-card p{
     margin: 0 0 32px;
+}
+
+.main-header{
+    border-bottom: 1px solid var(--card-border);
 }
