@@ -18,8 +18,12 @@ body{
     background-color: var(--banner-color);
 }
 
+img{
+    display: block;
+}
+
 .container{
-    max-width: 1128px;
+    max-width: 1158px;
     margin: 0 auto;
 }
 
@@ -40,6 +44,7 @@ h1{
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
+    margin: 0 0 72px;
 }
 
 .main-btn {
@@ -48,6 +53,9 @@ h1{
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    box-sizing: border-box;
+    padding: 16px 32px;
+    border-radius: 3px;
 }
 
 .main-btn:hover, .main-btn:focus {
@@ -163,10 +171,13 @@ footer{
 
 .main-team {
     background-color: var(--our-team-bg);
+    box-sizing: border-box;
+    padding: 120px 0;
 }
 
 .person-card {
     background-color: var(--banner-color);
+
 }
 
 .nav-address {
@@ -202,10 +213,9 @@ nav{
     align-items: center;
 }
 
-header{
+.header-container{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 96px;
     box-sizing: border-box;
     border-bottom: 1px solid var(--card-border);
 }
@@ -254,7 +264,71 @@ header{
     margin: 0 16px 32px;
 }
 
-main{
+.header-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    height: 600px;
     margin-bottom: 120px;
 }
 
+.main-title{
+    max-width: 496px;
+    margin-top: 188px;
+}
+
+.cards-main{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.card-main{
+    display: flex;
+    flex-direction: column;
+}
+
+.card-main-title{
+    font-size: 20px;
+    font-weight: 500;        
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--banner-bg);
+    margin: 0;
+}
+
+.card-main-description{
+   max-width: 264px;
+   margin: 8px 0 0;
+}
+
+.doing-images{
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.person-cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.person-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.person-card img{
+    border: 1px solid black;
+}
+
+.person-card .card-title{
+    margin: 32px 0 8px;
+}
+
+.person-card p{
+    margin: 0 0 32px;
+}
