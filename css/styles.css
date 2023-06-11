@@ -16,11 +16,9 @@ body{
     color: var(--text-color);
     font-size: 16px;
     background-color: var(--banner-color);
-    margin: 0 40px;
 }
 
 .container{
-    
     max-width: 1128px;
     margin: 0 auto;
 }
@@ -156,6 +154,7 @@ footer{
     padding: 100px 156px;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .logo-white {
