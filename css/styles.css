@@ -160,12 +160,16 @@ button{
 
 footer{
     background-color: var(--banner-bg);
+
+}
+
+footer .container{
     color: var(--banner-color);
     box-sizing: border-box;
-    padding: 100px 156px;
+    padding: 100px 0px;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
 }
 
 .logo-white {
