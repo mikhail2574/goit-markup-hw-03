@@ -8,6 +8,7 @@
     --btn-bg-passiv: #F4F4FD;
     --our-team-bg: #F4F4FD;
     --card-border: #E7E9FC;
+    --btn-border-active: transparent;
 }
 
 .visually-hidden {
@@ -147,7 +148,7 @@ button{
 }
 
 .portfolio-btn:focus, .portfolio-btn:hover{
-    border: 1px solid transparent;
+    border: 1px solid var(--btn-border-active);
     color: var(--banner-color);
     background-color: var(--active-color);
 }
