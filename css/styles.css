@@ -147,7 +147,8 @@ button{
     transition: .35s;
 }
 
-.portfolio-btn:focus, .portfolio-btn:hover{
+.portfolio-btn:focus, 
+.portfolio-btn:hover{
     border: 1px solid transparent;
     color: var(--banner-color);
     background-color: var(--active-color);
