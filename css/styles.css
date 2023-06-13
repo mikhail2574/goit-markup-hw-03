@@ -10,6 +10,20 @@
     --card-border: #E7E9FC;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 body{
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -56,9 +70,10 @@ h1{
     letter-spacing: 0.04em;
     box-sizing: border-box;
     padding: 16px 32px;
-    border-radius: 3px;
+    border-radius: 4px;
     display: block;
     margin: 0 auto;
+    min-width: 169px;
 }
 
 .main-btn:hover, .main-btn:focus {
@@ -105,10 +120,15 @@ button{
     list-style: none;
 }
 
+.filter{
+    box-sizing: border-box;
+    padding: 96px 0 120px;
+}
+
 .filter-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 72px;
+    gap: 24px;
 }
 
 .portfolio-btn{
@@ -120,7 +140,7 @@ button{
     line-height: 1.5;
     letter-spacing: 0.04em;
     box-sizing: border-box;
-    margin-right: 24px;
+    border: 1px solid var(--card-border);
     border-radius: 4px;
     padding: 12px 24px;
     transition: .35s;
@@ -129,6 +149,7 @@ button{
 .portfolio-btn:focus, .portfolio-btn:hover{
     color: var(--banner-color);
     background-color: var(--active-color);
+    border: 1px solid transparent;
 }
 
 .card-title{
@@ -160,16 +181,21 @@ button{
 
 footer{
     background-color: var(--banner-bg);
+    padding: 100px 0;
 
 }
 
 footer .container{
     color: var(--banner-color);
     box-sizing: border-box;
-    padding: 100px 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+footer a{
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-white {
@@ -196,6 +222,10 @@ footer .container{
     color: var(--active-color);
 }
 
+.main-work{
+    margin-bottom: 120px;
+}
+
 .main-work-title, .main-team-title {
     color: var(--banner-bg);
 }
@@ -203,7 +233,7 @@ footer .container{
 .footer-description {
     color: var(--our-team-bg);
     max-width: 264px;
-    padding: 16px 0 0;
+    padding: 0;
     margin: 0;
 }
 
@@ -259,16 +289,13 @@ nav{
     margin-bottom: 0;
 }
 
-.card-img{
-    margin-bottom: 32px;
-}
 
 .card-title{
     margin: 0 16px 8px;
 }
 
 .card-filter{
-    margin: 0 16px 32px;
+    margin: 0;
 }
 
 .header-main{
@@ -287,6 +314,7 @@ nav{
 .cards-main{
     display: flex;
     justify-content: space-between;
+    gap: 24px;
     margin-bottom: 120px;
 }
 
@@ -295,13 +323,17 @@ nav{
     flex-direction: column;
 }
 
+.card-main:first-child{
+    width: calc(100%-72px)/4;
+}
+
 .card-main-title{
     font-size: 20px;
     font-weight: 500;        
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--banner-bg);
-    margin: 0;
+    margin: 0 0 8px;
 }
 
 .main-description{
@@ -309,40 +341,64 @@ nav{
 }
 
 .card-main-description{
-   max-width: 264px;
-   margin: 8px 0 0;
+   margin: 0;
 }
 
 .doing-images{
     display: flex;
     gap: 24px;
     justify-content: space-between;
-    margin-bottom: 120px;
 }
 
 .person-cards {
     display: flex;
     justify-content: space-between;
+    gap: 24px;
+    flex-wrap: wrap;
 }
 
 .person-card{
     display: flex;
     flex-direction: column;
-    align-items: center;
+}
+
+.person-card{
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+}
+
+.person-container{
+    padding: 32px 16px;
 }
 
 .person-card img{
     border: 1px solid black;
 }
 
-.person-card .card-title{
-    margin: 32px 0 8px;
+.person-title{
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 .person-card p{
-    margin: 0 0 32px;
+    text-align: center;
 }
 
 .main-header{
     border-bottom: 1px solid var(--card-border);
+}
+
+.portfolio-card{
+    width: calc((100%-48px)/3);
+}
+
+.portfolio-container{
+    box-sizing: border-box;
+    padding: 32px 16px;
+    border: 1px solid var(--card-border);
+    border-top: none;
+}
+
+.portfolio-container .card-title{
+    margin-bottom: 8px;
 }
