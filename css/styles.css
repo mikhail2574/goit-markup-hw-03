@@ -148,7 +148,7 @@ button{
 }
 
 .portfolio-btn:focus, .portfolio-btn:hover{
-    border: 1px solid var(--btn-border-active);
+    border: 1px solid var(--active-color);
     color: var(--banner-color);
     background-color: var(--active-color);
 }
@@ -197,6 +197,7 @@ footer .container{
 .footer-link{
     display: inline-block;
     margin-bottom: 16px;
+    text-decoration: none;
 }
 
 .logo-white {
