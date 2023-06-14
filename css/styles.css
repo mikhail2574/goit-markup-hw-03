@@ -37,6 +37,15 @@ img{
     display: block;
 }
 
+h1, h2, h3, h4, h5, h6, p, ul{
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+}
+
+
 .container{
     max-width: 1158px;
     margin: 0 auto;
@@ -178,6 +187,7 @@ button{
 
 .header-main h1{
     color: var(--banner-color);
+    margin-bottom: 48px;
 }
 
 footer{
@@ -240,9 +250,6 @@ footer .container{
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-ul{
-    padding-left: 0;
-}
 
 nav{
     display: flex;
@@ -260,10 +267,6 @@ nav{
     justify-content: space-between;
     gap: 40px;
     
-}
-
-.address-item{
-    padding-left: 40px;
 }
 
 .cards{
@@ -286,11 +289,6 @@ nav{
 
 .card:nth-child(n+7){
     margin-bottom: 0;
-}
-
-
-.card-title{
-    margin: 0 16px 8px;
 }
 
 .card-filter{
@@ -370,10 +368,6 @@ nav{
     padding: 32px 16px;
 }
 
-.person-card img{
-    border: 1px solid black;
-}
-
 .person-title{
     text-align: center;
     margin-bottom: 8px;
@@ -385,6 +379,7 @@ nav{
 
 .main-header{
     border-bottom: 1px solid var(--card-border);
+    padding: 24px;
 }
 
 .portfolio-card{
