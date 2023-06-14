@@ -189,10 +189,6 @@ footer{
 
 footer .container{
     color: var(--banner-color);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .footer-link{
